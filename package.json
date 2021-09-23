@@ -1,0 +1,38 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "MUFG-CAR",
+  "repository": "https://iaansanity@bitbucket.org/iaansanity/mufg-car.git",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "start": "lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "clean-webpack-plugin": "^1.0.1",
+    "cross-env": "^5.2.1",
+    "ejs-html": "^5.1.5",
+    "file-saver": "^2.0.2",
+    "jwt-decode": "^2.2.0",
+    "laravel-mix": "^4.1.4",
+    "moment": "^2.24.0",
+    "pretty": "^2.0.0",
+    "vue": "^2.6.10",
+    "vue-router": "^3.1.3",
+    "vuejs-paginate": "^2.1.0",
+    "vuex": "^3.1.1",
+    "webpack-obfuscator": "^0.24.6",
+    "xlsx": "^0.15.5"
+  },
+  "devDependencies": {
+    "vue-template-compiler": "^2.6.10"
+  }
+}
